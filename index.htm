@@ -1,0 +1,171 @@
+<!Doctype HTML>
+<html>
+<head>
+<style>
+
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00; cursor: pointer;}
+</head>
+
+ol li { /*affects indiv items in ol*/
+  background: #fedcba;
+}
+
+ul li { /*affects indiv items in ul*/
+  background: #abcdef;
+  margin: 5px;
+}
+
+ul.sqb {
+  list-style-type: square;
+}
+
+ol.rom {
+  list-style-type: upper-roman;
+}
+
+ol.alp {
+list-style-type: lower-alpha;
+}
+
+p {
+color: yellow; /*Setting paragraph text colour to red*/
+text-align: center;
+}
+
+#header {
+margin: 30px 15px;
+background-color: #0000fa;
+background-image: url("https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-attachment: fixed;
+opacity: 0.5;
+padding: 20px;
+
+border:2px solid #f90426;
+border-style: solid double solid double;
+border-width: thick 50px;
+border-radius: 10px;
+outline: 5px ridge;
+outline-color: invert;
+outline-offset: 10px;
+
+color: white;
+font-family: Impact, Courier New, Arial;
+text-decoration: overline;
+text-transform: uppercase;
+letter-spacing: 3px;
+line-height: 1.5;
+text-shadow: 0.5px 0.5px black;
+
+}
+
+div.one {
+min-width: 400px;
+max-width: 500px;
+min-height: 100px;
+max-height:200px;
+padding: 50px;
+margin: 20px;
+background-color: hsl(210, 50%, 65%);
+font-size: 25px;
+word-spacing: 3px;
+
+}
+
+img.middle {
+vertical-align: middle;
+padding: 20px;
+}
+
+.right {
+font-size: 5vw;
+padding: 5px 10px;
+color: #6a849f;
+background-color: rgb(255,255,220);
+text-align: right;
+direction: rtl;
+unicode-bidi: bidi-override;
+}
+
+#timetable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#timetable td, #timetable th {
+  border: 2px solid black;
+  padding: 8px;
+}
+
+#timetable tr:nth-child(even){background-color: #f2f2f2;}
+
+#timetable tr:hover {background-color: #ddd;}
+
+#timetable th { /*table header*/
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fe22f9;
+  color: white;
+}
+
+</style>
+
+<body style="background-color:lightgrey; font-family:Arial;">
+<title>The site of me</title>
+
+<p style="font-size: 150px; font-family:Comic-Sans;">Hello!</p>
+
+<div style="text-align: center;">
+<h1 id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></h2>
+<p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
+</div>
+
+<br>
+<h2 class="right"><i>The best place to be<i></h2>
+<hr>
+<div class="one"><img class="middle" src="https://www.youtube.com/s/desktop/165c69cc/img/favicon_96.png">YouTube video of the week:</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ani-gc9KigA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><b><a class="one" href="default.asp" target="_blank">This link changes color</a></b></p>
+
+<p>To do:</p>
+<ul class="sqb">
+<li>Do some coding</li>
+<li>Revise for exams</li>
+<li>Work hard</li>
+</ul>
+
+<p>Agenda for the day</p>
+<ol class="rom">
+<li>Excercise</li>
+<li>CSS</li>
+<li>Other things</li>
+<li>Sleep</li>
+</ol>
+
+<p>Questions to ask</p>
+<ol class="alp">
+<li>Why?</li>
+<li>When?</li>
+<li>What?</li>
+</ol>
+
+<table id="timetable">
+  <tr>
+    <th>Morning</th>
+    <th>Afternoon</th>
+    <th>Evening</th>
+  </tr>
+  <tr>
+    <td>Free</td>
+    <td>Free</td>
+    <td>Free</td>
+  </tr>
+
+</body>
+</html>
