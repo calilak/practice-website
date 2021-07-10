@@ -130,24 +130,57 @@ unicode-bidi: bidi-override;
   text-align: left;
   background-color: #fe22f9;
   color: white;
+  
+span {
+    display: block;
+  }
+ 
+  #panel {
+    display: none;
+  }
+  
+  #panel, .show {
+    font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAFFF;
+  color: white;
+  border: solid 1px black;
+  margin: auto;
+  }
 }
 /*end of styling*/
 </style>
+  
+
   <title>The site of me</title>
   </head>
-
+  
+<script>
+function revealPanel() {
+  document.getElementById("panel").style.display = "block";
+}
+  function hidePanel() {
+  document.getElementById("panel").style.display = "none";
+}
+</script>
+  
   <div class="sidenav">
 <body style="background-color:lightgrey; font-family:Arial;">
 
-  <p>This is the sidebar</p>
+  <p style="visibility: hidden;">This is the sidebar</p>
+  <p class="no-display">This element is hidden</p>
 <p style="font-size: 20px; font-family:Comic-Sans;">Hello!</p>
+  <span>Thank you for reading</span>
+  <span>this long sentence</span>
     </body>
 </div>
 
   <div class="content">
 <p id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
-
+    <p class="panel" onclick=revealPanel()>Click to show panel</p>
+    <p class="panel" onclick=hidePanel()>Click to hide panel</p>
 <br>
 <h2><i>The best place to be<i></h2>
 <hr>
