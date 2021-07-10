@@ -7,6 +7,7 @@
   margin-left: 200px;
   padding-left: 20px;
 }
+  
  .sidenav {
   height: 100%;
   width: 200px;
@@ -44,9 +45,13 @@ list-style-type: lower-alpha;
 }
 
 p {
-color: yellow; /*Setting paragraph text colour to red*/
+color: yellow; /*Setting paragraph text colour to yellow*/
 text-align: center;
 }
+  
+li {
+  display: inline;
+  }
 
 #header {
 margin: 30px 15px;
@@ -126,9 +131,8 @@ unicode-bidi: bidi-override;
   background-color: #fe22f9;
   color: white;
 }
-
+/*end of styling*/
 </style>
-  /*END OF STYLING*/
   <title>The site of me</title>
   </head>
 
@@ -141,7 +145,7 @@ unicode-bidi: bidi-override;
 </div>
 
   <div class="content">
-<h1>Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></h2>
+<p id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
 
 <br>
