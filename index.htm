@@ -135,7 +135,7 @@ span {
     display: block;
   }
  
-  #panel, .hide {
+  .no-display {
     display: none;
   }
   
@@ -152,7 +152,6 @@ span {
 /*end of styling*/
 </style>
   
-
   <title>The site of me</title>
   </head>
   
@@ -179,7 +178,7 @@ function revealPanel() {
   <div class="content">
 <p id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
-    <p class="show" onclick=revealPanel()>Click to show panel</p>
+    <p id="panel" class="show" onclick=revealPanel()>Click to show panel</p>
     <div id="panel">
       <p>This is a panel that can be hidden or shown</p>
       <p>:D</p>
