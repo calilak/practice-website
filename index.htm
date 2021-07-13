@@ -15,13 +15,13 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #a2c;
+  background-color: #aac;
   overflow-x: hidden;
 }
 
 a.one:link {color:#ff0000;}
 a.one:visited {color:#0000ff;}
-a.one:hover {color:#ffcc00; cursor: pointer;}
+a.one:hover {color:#aacc00; cursor: pointer;}
 
 ol li { /*affects indiv items in ol*/
   background: #fedcba;
@@ -135,9 +135,9 @@ span {
     display: block;
   }
  
-  #no-display {
+.nodisplay {
     display: none;
-  }
+}
   
   #panel {
     display: none;
@@ -164,7 +164,7 @@ span {
 <body style="background-color:lightgrey; font-family:Arial;">
 
   <p style="visibility: hidden;">This is the sidebar</p>
-  <p id="no-display">This element is hidden</p>
+  <p class="nodisplay">This element is hidden</p>
 <p style="font-size: 20px; font-family:Comic-Sans;">Hello!</p>
   <span>Thank you for reading</span>
   <span>this long sentence</span>
@@ -174,11 +174,11 @@ span {
   <div class="content">
 <p id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
-    <p class="show" onclick=revealPanel()>Click to show panel</p>
+    <p class="show" onclick="revealPanel()">Click to show panel</p>
     <div id="panel">
       <p>This is a panel that can be hidden or shown</p>
       <p>:D</p>
-    <p onclick=hidePanel()>Click to hide panel</p>
+    <p onclick="hidePanel()">Click to hide panel</p>
     </div>
 <br>
 <h2><i>The best place to be<i></h2>
@@ -223,6 +223,7 @@ span {
     <td>Free</td>
   </tr>
   </div>
+  
   <script>
 function revealPanel() {
   document.getElementById("panel").style.display = "block";
