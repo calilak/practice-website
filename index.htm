@@ -173,13 +173,17 @@ display: none;
   <div class="content">
 <p id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
+
+    <p class="flip" onclick="showPanel()">Click to show panel</p>
     
-    <p class="flip" onclick="revealPanel()">Click to show panel</p>
-    <div id="panel">
-      <p>This is a panel that can be hidden or shown</p>
-      <p>:D</p>
-    <p class="flip" onclick="hidePanel()">Click to hide panel</p>
-    </div>
+<div id="panel">
+  <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+  <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.
+  <p class = "flip" onclick="hidePanel()">Click to hide panel</p>
+</div>
+
 <br>
 <h2><i>The best place to be<i></h2>
 <hr>
@@ -225,7 +229,7 @@ display: none;
   </div>
   
 <script>
-function revealPanel() {
+function showPanel() {
   document.getElementById("panel").style.display = "block";
 }
   function hidePanel() {
