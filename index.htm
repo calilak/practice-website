@@ -139,10 +139,6 @@ span {
     display: none;
 }
   
-  #panel {
-    display: none;
-  }
-  
   #panel, .show {
     font-size: 16px;
   padding: 10px;
@@ -151,6 +147,10 @@ span {
   color: white;
   border: solid 1px black;
   margin: auto;
+  }
+  
+  #panel {
+  display: none;
   }
 }
 /*end of styling*/
@@ -164,7 +164,7 @@ span {
 <body style="background-color:lightgrey; font-family:Arial;">
 
   <p style="visibility: hidden;">This is the sidebar</p>
-  <p class="nodisplay">This element is hidden</p>
+  <p style="display: none;">This element is hidden</p>
 <p style="font-size: 20px; font-family:Comic-Sans;">Hello!</p>
   <span>Thank you for reading</span>
   <span>this long sentence</span>
@@ -174,11 +174,12 @@ span {
   <div class="content">
 <p id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
+    
     <p class="show" onclick="revealPanel()">Click to show panel</p>
     <div id="panel">
       <p>This is a panel that can be hidden or shown</p>
       <p>:D</p>
-    <p onclick="hidePanel()">Click to hide panel</p>
+    <p class="show" onclick="hidePanel()">Click to hide panel</p>
     </div>
 <br>
 <h2><i>The best place to be<i></h2>
