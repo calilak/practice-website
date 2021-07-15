@@ -155,7 +155,7 @@ span {
   display: none;
 }
   
-div {
+div.two {
   width: 20px;
   height: 50px;
   font-size: 20px;
@@ -185,19 +185,19 @@ div {
 </div>
   </div>
 
-  <div class="content">
+<div class="content">
 <p class="red" id="header">Welcome<br><i>to <del>your</del> my<br>remarkable<br><ins>web page</ins></i></p>
 <p><strong><em>Feel free to <mark>browse</mark>!</em></strong></p>
   
 <p onclick="showPanel()">Click to show panel</p>
 
-<div id="panel">
+  <div id="panel">
   <p>This panel is hidden by default</p>
   <p>It uses JavaScript</p>
   <p>Thanks for reading</p>
   <p>;D</p>
   <p class="flip" onclick="hidePanel()">Click to hide panel</p>
-</div>
+  </div>
 
 <br>
 <h2><i>The best place to be</i></h2>
@@ -208,7 +208,7 @@ div {
 
 <p><b><a href="default.asp" target="_blank">This link changes color</a></b></p>
 
-  <div id="box">
+  <div class="two">
     <p>A description of myself could go here</p>
     <p>Use the scrollbar to see all text in this div</p>
   </div>
