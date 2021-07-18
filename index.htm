@@ -205,6 +205,16 @@ div.two {
   overflow: auto;
 }
   
+ .tooltip {
+  display: none;
+  background-color: #000455;
+  padding: 20px;
+}
+
+div:hover .tooltip {
+  display: block;
+}
+  
 /*end of styling*/
 </style>
   
@@ -300,6 +310,11 @@ div.two {
     <td>Free</td>
     <td>Free</td>
   </tr>
+  
+ <div>Hover over me to show the p element
+  <p id="tooltip">you weren't supposed to do that</p>
+ </div>
+
   </div>
   
 <script>
