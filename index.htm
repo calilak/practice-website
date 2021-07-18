@@ -32,7 +32,7 @@
   text-align: center;
   width: 80%;
   height: 150px;
-  margin-bottom: 150px;
+  margin-left: 20%;
   padding: 50px 0;
   font-family: Impact;
 }
@@ -40,15 +40,23 @@
 .topnav li {
   display: inline-block;
   font-size: 20px;
-  float:left;
+  float: left;
+  border-right:1px solid white;
+}
+
+.topnav li:last-child {
+  border-right: none;
 }
   
  .topnav ul {
+  position: fixed;
+  top: 0;
+  width: 100%
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #545;
+  background-color: #444;
 }
 
 .topnav li a {
