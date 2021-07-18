@@ -56,8 +56,9 @@ img.left {
 }
 
 a.one:link {color:#ff0000;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#aacc00; cursor: pointer;}
+a.one:visited {color:#00ffff;}
+a.one:hover {color:#ff00ff; cursor: pointer;} /*must come after link and visited*/
+a.one:active {color:#0000ff;} /*must come after hover*/
 
 ol li { /*affects indiv items in ol*/
   background: #fedcba;
@@ -249,7 +250,7 @@ div.two {
 
   <iframe width="416" height="192" src="https://www.youtube.com/embed/gzdm_YWwEbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p><b><a href="default.asp" target="_blank">This link changes color</a></b></p>
+<p><b><a href="default.asp" target="_blank" class="one">This link changes color</a></b></p>
 
   <div class="two">
     <p>A description of myself could go here</p>
