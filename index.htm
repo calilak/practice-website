@@ -43,6 +43,27 @@
   padding: 20px;
 }
   
+  .sidenav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.sidenav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+  
 img.left {
   float: left;
 }
@@ -234,7 +255,13 @@ div.two {
 </ul>
 
   <div class="sidenav">
-
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  </ul>
+    
   <p style="visibility: hidden;">This is the sidebar</p>
   <p style="display: none;">This element is hidden</p>
 <p style="font-size: 20px;">Hello!</p>
