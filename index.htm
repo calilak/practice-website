@@ -26,7 +26,7 @@
 }
   
   .topnav {
-  background-color: #0e2f45; !important
+  background-color: #0e2f45;
   font-family: Impact;
   position: fixed;
   top: 0;
@@ -80,7 +80,6 @@ li a:hover {
 /* Change the link color on hover */
 li a:hover {
   background-color: #555;
-  color: white;
 }
   
 img.left {
@@ -260,8 +259,8 @@ div.two {
   }
 
 .count li::before {
-  counter-increment: section;
-  content: counters(section,".") " ";
+  counter-increment: section;  !important
+  content: counters(section,".") " ";  !important
 }
   
   input[type=text] {
